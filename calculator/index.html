@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class= "bg-violet-600">
+    <div class="top-1 text-4xl font-extrabold text-center">Calculator</div>
+    <div class="box bg-black border-4 border-red-700 md:w-[800px] md:h-[500px] sm:w-[500px] sm:h-[350px] mt-5 ml-auto mr-auto flex flex-col  shadow hover:shadow-2xl ">
+        <div class="box1 bg-white  border-2 border-gray-100 md:w-[700px] md:h-[40px] sm:w-[400px] mt-10 ml-auto mr-auto   " >
+            <input type="text" class= " border-2 border-black md:w-[650px] sm:w-[350px] mt-1 ml-5 pl-2" id="values" placeholder="Enter value"></div>
+        <div class="box2 bg-white  border-2 border-gray-100 md:w-[700px] md:h-[300px] sm:w-[400px] mt-10 ml-auto mr-auto p-1 grid grid-cols-4">
+            <button class="text-white bg-black  border-2 border-red-500 hover:bg-gray-400" onclick="append(9)">9</button>
+            <button class="text-white bg-black  border-2 border-red-500 hover:bg-gray-400" onclick="append(8)">8</button>
+            <button class="text-white bg-black  border-2 border-red-500 hover:bg-gray-400" onclick="append(7)">7</button>
+            <button class="text-white bg-black  border-2 border-red-500 hover:bg-gray-400" onclick="append('+')" >+</button>
+            <button class="text-white bg-black  border-2 border-red-500 hover:bg-gray-400" onclick="append(6)">6</button>
+            <button class="text-white bg-black  border-2 border-red-500 hover:bg-gray-400 " onclick="append(5)">5</button>
+            <button class="text-white bg-black  border-2 border-red-500 hover:bg-gray-400" onclick="append(4)">4</button>
+            <button class="text-white bg-black  border-2 border-red-500 hover:bg-gray-400" onclick="append('-')" >-</button>
+            <button class="text-white bg-black  border-2 border-red-500 hover:bg-gray-400" onclick="append(3)">3</button>
+            <button class="text-white bg-black border-2 border-red-500 hover:bg-gray-400" onclick="append(2)">2</button>
+            <button class="text-white bg-black  border-2 border-red-500 hover:bg-gray-400" onclick="append(1)">1</button>
+            <button class="text-white bg-black  border-2 border-red-500 hover:bg-gray-400" onclick="append('*')" >*</button>
+            <button class="text-white bg-black  border-2 border-red-500 hover:bg-gray-400" onclick="append(0)">0</button>
+            <button class="text-white bg-black  border-2 border-red-500 hover:bg-gray-400" onclick="equal()" >=</button>
+            <button class="text-white bg-black  border-2 border-red-500 hover:bg-gray-400" onclick="clr()" >clr</button>
+            <button class="text-white bg-black  border-2 border-red-500 hover:bg-gray-400" onclick="append('/')" >/</button>
+           <div class=" "> <button class="backspace bg-black border-2 border-red-500 text-white mt-3 pl-8 pr-8 ml-20 md:w-[500px] sm:[450px] hover:bg-gray-400" onclick="bck()">BACKSPACE</button></div>
+            </div>
+           
+    </div>
+    <h2 class="text-black-600 font-bold text-4xl text-center">PANKAJ KUMAR</h2>
+      <script src="script.js"></script>    
+</body>
+</html>
