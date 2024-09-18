@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* html,body{
+    height: 100vh;
+    width: 100%;
+} */
+body{
+    background-image: url(image/bgimage.jpg);
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+}
+header{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 100px;
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 300px;
+    width: 100%;
+    height: 100%;
+}
+.logo img{
+    height: 100%;
+}
+.logo img:hover{
+    scale: 1.5;
+    transition-duration:1.5s;
+}
+ nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    color: rgb(7, 179, 179);
+    font-size: x-large;
+}
+nav ul li{
+    list-style: none;
+}
+.navlist li:hover{
+    background-color: rgba(128, 128, 128, 0.349);
+    scale:1.5;
+    transition-duration:0.5s;
+}
+main{
+    /* background-color: rgba(219, 108, 164, 0.219);
+    border-radius: 20%; */
+    /* height: 70vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 100px;
+}
+/* .tag{
+    display: flex;
+    flex-wrap: wrap;
+} */
+.tag .tagline{
+    color: rgb(0, 46, 250);
+    font-size: 10vmin;
+    margin-top: 50px;
+}
+.products li{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+align-items: center;
+gap: 30px;
+}
+.products li img{
+    height: 400px;
+    border-radius: 45%;
+}
+.products li .description{
+    color: rgb(117, 48, 182);
+    font-size: 40px;
+}
+
+.container{
+    background-color: rgba(219, 108, 164, 0.219);
+    width: 100%;
+    height: 8vh;
+    margin-top: 40px;
+   
+    padding-top: 8px;
+}
+.container ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: black;
+   
+}
+
+
+/* For tablets (screen width 768px to 1024px) */
+@media only screen and (max-width: 1024px) {
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo img {
+        height: 80px;
+    }
+
+    .tag .tagline {
+        font-size: 8vmin;
+        text-align: center;
+    }
+
+    .products li {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products li img {
+        height: 300px;
+    }
+
+    .products li .description {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+/* For mobile devices (screen width 768px and below) */
+@media only screen and (max-width: 768px) {
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        font-size: large;
+    }
+
+    .logo img {
+        height: 70px;
+    }
+
+    .tag .tagline {
+        font-size: 6vmin;
+        text-align: center;
+    }
+
+    .products li {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products li img {
+        height: 200px;
+    }
+
+    .products li .description {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .container ul {
+        flex-direction: column;
+        gap: 5px;
+        font-size: small;
+        text-align: center;
+    }
+}
+
+/* For smaller mobile devices (screen width 480px and below) */
+@media only screen and (max-width: 480px) {
+    .tag .tagline {
+        font-size: 5vmin;
+    }
+
+    .products li img {
+        height: 150px;
+    }
+
+    .products li .description {
+        font-size: 18px;
+    }
+
+    nav ul {
+        font-size: medium;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+}
